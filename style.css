@@ -12,6 +12,141 @@
     --regular: 400;
 }
 
+h2{
+    font-weight: var(--bold);
+}
+p{
+    font-weight: var(--regular);
+}
+
 body{
     font-family: 'IBM Plex Sans', sans-serif;
+    background-image: url("assets/bg-main-mobile.png");
+    background-position: left;
+}
+
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    width: 20.4375rem; /*327px*/
+    color: var(-black);
+    margin-bottom:10.375rem;
+}
+header h2{
+    font-size: 2.5rem;
+    letter-spacing: -0.45px;
+    line-height: 3rem;
+}
+header p{
+    font-size: 1rem;
+    line-height: 1.625rem;
+}
+
+main{
+    position: relative;
+    border-radius: 0.75rem;
+    width: 100vw;
+    background-image: url("/assets/bg-pattern-2.svg");
+    background-color: var(--black);
+    background-position: top;
+    background-repeat: no-repeat;
+    color: var(--white);
+}
+#app{
+    height: 430px;
+    position: relative;
+    top:-98px;
+}
+.block1{
+    display: flex;
+    justify-content: center;
+}
+
+.block2{
+    border-radius: 0.75rem;
+    height: 546px;
+    background-color: var(--orange);
+    display: flex;
+    justify-content: center;
+}
+.block-txt{
+    width: 18.875rem; /*302px*/
+}
+.block2 h2{
+    font-size: 2rem;
+}
+.block2 p{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+.price span{
+    font-weight: var(--bold);
+    font-size: 4rem;
+    line-height: 3.25rem;
+}
+.price{
+    display: inline-flex;
+    align-items: center;
+    width: 10.3rem;
+    justify-content: space-around;
+}
+
+/* buttons */
+.buttons-div{
+    height: 138px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.buttons-div p{
+    font-size: 1.125rem;
+    font-weight: var(--bold);
+}
+button{
+    font-size: 1.125rem;
+    width: 296px;
+    height: 61px;
+    padding: 0;
+    border: none;
+    border-radius:0.75rem;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#apple{
+    color: var(--white);
+    background-color: var(--black);
+}
+#android{
+    color: var(--black);
+    background-color: var(--white);
+}
+
+
+/* FOOTER STYLING*/
+footer{
+    width:100vw;
+    min-height: 300px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-box{
+    width: 20.4375rem;
+}
+.footer-box p{
+    height: 6.5625rem;
+}
+.social{
+    width: 100px;
+    display: inline-flex;
+    justify-content: space-between;
 }
