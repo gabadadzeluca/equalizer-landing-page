@@ -23,6 +23,7 @@ body{
     font-family: 'IBM Plex Sans', sans-serif;
     background-image: url("assets/bg-main-mobile.png");
     background-position: left;
+    overflow-x: hidden;
 }
 
 
@@ -48,7 +49,6 @@ header p{
 }
 
 main{
-    position: relative;
     border-radius: 0.75rem;
     width: 100vw;
     background-image: url("/assets/bg-pattern-2.svg");
@@ -133,14 +133,20 @@ button{
 /* FOOTER STYLING*/
 footer{
     width:100vw;
-    min-height: 300px;
+    min-height: 400px;
     background-color: var(--white);
     display: flex;
-    align-items: center;
     justify-content: center;
+}
+footer p{
+    font-size: 1rem;
+    line-height: 1.625rem;
 }
 .footer-box{
     width: 20.4375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .footer-box p{
     height: 6.5625rem;
